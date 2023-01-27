@@ -36,6 +36,11 @@ public class ToyServlet extends HttpServlet {
 		String quantity = req.getParameter("quantity");
 		String shape = req.getParameter("shape");
 		String mood = req.getParameter("palymood");
+	
+		String size = req.getParameter("size");
+		String country = req.getParameter("country");
+		String production = req.getParameter("production");
+		String invested = req.getParameter("invested");
 
 		
 		System.out.println(name);
@@ -46,6 +51,10 @@ public class ToyServlet extends HttpServlet {
 		System.out.println(quantity);
 		System.out.println(shape);
 		System.out.println(mood);
+		System.out.println(size);
+		System.out.println(country);
+		System.out.println(production);
+		System.out.println(invested);
 
 
 		
