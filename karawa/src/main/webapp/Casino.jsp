@@ -25,7 +25,7 @@
 		</div>
 	</nav>
 	<h2>Welcome to Casino</h2>
-	<form action="juice" method="post">
+	<form action="juice" method="get">
 		<div class="mb-3">
 			<label for="formFile" class="form-label">Name</label> <input
 				type="text" class="form-control" name="casinoName" id="formFile"
