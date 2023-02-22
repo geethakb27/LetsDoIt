@@ -12,7 +12,6 @@
 		<hibernate.version>5.6.15.Final</hibernate.version>
 		<mysql.version>8.0.32</mysql.version>
 		<java.servlet.version>2.5</java.servlet.version>
-		
 	</properties>
 
 	<dependencies>

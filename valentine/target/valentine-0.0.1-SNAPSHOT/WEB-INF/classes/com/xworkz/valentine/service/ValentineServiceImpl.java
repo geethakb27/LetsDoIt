@@ -1,6 +1,3 @@
-
-
-
 package com.xworkz.valentine.service;
 
 import java.util.Collections;
@@ -54,29 +51,5 @@ public class ValentineServiceImpl implements ValentineService
 		
 		return Collections.emptySet();
 
-	}
-	
-	
-	@Override
-	public ValentineDTO findById(int id) {
-		// TODO Auto-generated method stub
-		
-		if(id>0) {
-			ValentineEntity entity=this.valentineRepository.findById(id);
-			
-			if(entity!=null) {
-				System.out.println("Entity is found "+id);
-				
-				ValentineDTO dto=new ValentineDTO();
-				dto.setName(entity.getName());
-				dto.setGifts(entity.getGifts());
-				dto.setId(entity.getId());
-				dto.setPlaces(entity.getPlaces());
-				dto.setValentineName(entity.getValentineName());
-				return dto;
-				
-			}
-		}
-		return ValentineService.super.findById(id);
 	}
 }

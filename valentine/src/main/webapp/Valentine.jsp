@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +29,10 @@
 						<li style="display: inline-block;padding: 20px;">
 					<a href="index.jsp" class="col-lg-2 col-sm-2">Home</a>
 					<li style="display: inline-block;">
+					
+						<li style="display: inline-block;padding: 20px;">
+					<a href="ValentineFind.jsp" class="col-lg-2 col-sm-2">Search</a>
+					<li style="display: inline-block;">
 				</ul>
 			</div>
 	</nav>
@@ -41,19 +45,19 @@
      <form action="valentine" method="post">
      
 		<pre>
-		Name:<input type="text" name="name"/>
-		ValentineName:<input type="text" name="valentineName"/>
+		Name:<input type="text" name="name" value="${dto.name}"/>
+		ValentineName:<input type="text" name="valentineName" value="${dto.valentineName}"/>
 		
 		
 		Places :<select name="places">
-            <option value =" "> SELECT</option>	
+            <option value ="${dto.places}"> SELECT</option>	
            <c:forEach items = "${places}" var="p">
              <option value="${p}" >${p}</option>
      </c:forEach>	
 	</select>
 	
 		Gifts :<select name="gifts">
-            <option value =" "> SELECT</option>	
+            <option value ="${dto.gifts}"> SELECT</option>	
            <c:forEach items = "${gifts}" var= "g">
              <option value="${g}" >${g}</option>
      </c:forEach>	
